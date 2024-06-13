@@ -1,0 +1,7 @@
+select count(*) from sales_data
+
+select region, sum(total_sales) from sales_data group by region
+
+select avg(total_sales) from sales_data
+
+select orderid, count(*) from sales_data group by orderid having count(*) > 1
